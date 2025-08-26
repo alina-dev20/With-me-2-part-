@@ -37,6 +37,27 @@
     border-bottom:1px solid var(--border); 
     backdrop-filter:saturate(180%) blur(6px) 
   }
+  .lang-switch{
+    display:flex; 
+    align-items:center;
+  }
+  
+  .lang-switch button{
+    display:inline-flex; 
+    align-items:center; 
+    gap:6px;
+    background:#fff; 
+    border:1.5px solid #111; 
+    border-radius:8px;
+    padding:6px 12px; 
+    font-weight:600; 
+    cursor:pointer;
+    transition:.2s;
+  }
+  .lang-switch button:hover{
+    background:#111; color:#fff;
+  }
+  
   .container-header{ 
     display:flex; 
     align-items:center; 
@@ -222,7 +243,7 @@
 .svc-card__icon{
   display:inline-grid; place-items:center;
   width:28px; height:28px; border-radius:50%;
-  border:1.5px solid currentCo
+  border:1.5px solid currentColor;
 }
 
 /* ========== CTA блок (Projects) ========== */
@@ -507,5 +528,102 @@
     border-radius:8px; font-weight:800; letter-spacing:.02em;
   }
   .footer__social a:hover{ border-color:#fff; }
- 
+ /* ================== планшеты и ниже ================== */
+@media (max-width: 980px){
+
+    /* контейнер */
+    .container{ padding: 0 16px; }
+  
+    /* шапка: разбиваем на 2 строки, меню со скроллом */
+    .container-header{
+      height:auto; padding:10px 0; gap:12px; flex-wrap:wrap;
+    }
+    .brand{ font-size:18px; gap:10px; }
+    .lang-switch{ margin-left:auto; }
+    .lang-switch button{ padding:6px 10px; min-height:36px; }
+  
+    .nav{
+      order:2; width:100%;
+      display:flex; align-items:center; gap:12px;
+      overflow-x:auto; -webkit-overflow-scrolling:touch;
+      border-top:1px solid var(--border); padding-top:8px; padding-bottom:6px;
+    }
+    .nav a{ flex:0 0 auto; white-space:nowrap; padding:8px 2px; }
+  
+    /* HERO: одна колонка, картинка сверху */
+    .about-me{ padding:40px 0 28px; }
+    .container-about__wrapper{
+      grid-template-columns:1fr; gap:20px;
+    }
+    .about-me .h1{ font-size: clamp(26px, 6.6vw, 38px); margin-bottom:12px; }
+    .about-me .lead{ max-width:none; }
+    .art{ order:-1; min-height:300px; border-radius:200px; }
+    .art__img{
+      right:50%; transform:translateX(50%);
+      width:min(92%, 380px); bottom:16px; max-height:calc(100% - 24px);
+    }
+  
+    /* ПРОЕКТЫ: одна колонка */
+    .projects{ padding:32px 0 64px; }
+    .projects__grid{
+      grid-template-columns:1fr; gap:16px;
+    }
+    .projects__grid > *{ min-width:0; } /* чтобы карточки не распирали грид */
+    .svc-card{ padding:18px; min-height:unset; box-shadow:4px 4px 0 #111; }
+    .svc-card__media{ font-size:40px; }
+  
+    /* CTA: одна колонка, центр */
+    .services-cta{
+      grid-template-columns:1fr; gap:16px; text-align:center;
+    }
+    .services-cta .cta{ justify-content:center; }
+    .services-cta__art{ min-height:120px; }
+  
+    /* PROCESS (аккордеон) компактнее */
+    .process{ padding:32px 0 56px; }
+    .step > summary{ padding:16px; gap:12px; }
+    .step__num{ font-size:22px; }
+    .step__body{ padding:12px 16px 16px; }
+  
+    /* CONTACT: одна колонка и широкая кнопка */
+    .contact__card{ grid-template-columns:1fr; gap:18px; }
+    .contact__form{ grid-template-columns:1fr; }
+    .contact__submit{ justify-self:stretch; }
+  
+    /* футер — столбиком */
+    .footer__inner{
+      grid-template-columns:1fr; gap:16px; align-items:flex-start;
+    }
+    .footer__nav{ flex-wrap:wrap; gap:12px; }
+    .footer__bottom{
+      flex-direction:column; align-items:flex-start; gap:8px;
+    }
+  }
+  
+  /* ================== телефоны и уже (iPhone XR и меньше) ================== */
+  @media (max-width: 430px){
+  
+    .container{ padding:0 12px; }
+  
+    .about-me .h1{ font-size: clamp(22px, 8vw, 30px); }
+    .about-me .lead{ font-size:14px; }
+    .btn{ padding:12px 16px; min-height:40px; }
+  
+    .art{ min-height:260px; }
+    .art__img{ width:min(88%, 320px); bottom:10px; }
+  
+    .svc-card{ padding:16px; }
+    .svc-card__title{ font-size:18px; }
+    .svc-card__icon{ width:26px; height:26px; }
+    .svc-card__media{ font-size:36px; }
+  
+    .orb{ width:64px; height:64px; right:36px; top:14px; }
+    .star--dark{ right:56px; top:88px; }
+    .star--lime{ right:90px; bottom:30px; }
+  
+    .field__control{ padding:12px 14px; font-size:16px; }
+  
+    .footer__social a{ width:34px; height:34px; }
+  }
+  
   

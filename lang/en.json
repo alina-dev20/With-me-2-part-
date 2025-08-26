@@ -1,0 +1,47 @@
+{
+    "nav_about": "About me",
+    "nav_projects": "Projects",
+    "nav_skills": "Skills",
+    "nav_contacts": "Contacts",
+  
+    "hero_title": "Junior Frontend Developer",
+    "hero_lead": "Hello! I'm Alina, a passionate frontend developer. I specialize in building beautiful and functional websites using HTML, CSS, JavaScript, and React. I have a strong desire to keep learning and improving my skills every day. When I'm not coding, you can find me exploring new technologies, traveling, or spending time with my loved ones.",
+    "hero_github": "My GitHub",
+  
+    "projects_tag": "Projects",
+    "projects_lead": "I’ve put together a collection of projects I’d like to share — each one is part of my journey as a developer:",
+    "card_more": "Learn more",
+  
+    "cta_title": "Have an idea or feedback?",
+    "cta_text": "Here you can share your thoughts and suggestions about my projects, or request a custom project tailored to your needs. I’ll be glad to discuss and bring your ideas to life.",
+    "cta_button": "Leave your request",
+  
+    "process_tag": "My Development Principles",
+    "process_lead": "What I rely on when creating projects",
+    "process_s1_title": "Semantics and Accessibility",
+    "process_s1_body": "I use semantic markup (<header>, <main>, <nav>, etc.), proper H1–H6 hierarchy, alternative text for images, managed focus, color contrast, and ARIA attributes. This improves SEO and ensures the interface is user-friendly for everyone.",
+    "process_s2_title": "Responsiveness and Layout",
+    "process_s2_body": "I follow a mobile-first approach, use CSS Grid/Flexbox, relative units (%, rem, clamp), and define breakpoints for real devices. The interface looks great on phones, tablets, and desktops.",
+    "process_s3_title": "Performance",
+    "process_s3_body": "I optimize images (modern formats, proper sizing, lazy-loading), minimize critical CSS, and follow Lighthouse best practices: fast first paint, efficient script loading, and caching.",
+    "process_s4_title": "Clean and Maintainable Code",
+    "process_s4_body": "I write modular styles (BEM/utility), meaningful names, use linters/formatters (ESLint/Prettier). Components are reusable, structure is clear, and git commits are atomic with readable messages.",
+    "process_s5_title": "UX Details and Micro-interactions",
+    "process_s5_body": "Smooth hover/focus states, clear texts, predictable animations, instant feedback to user actions. Forms include validation and helpful hints.",
+    "process_s6_title": "Testing and Quality Assurance",
+    "process_s6_body": "I test across popular browsers and devices, check accessibility (tab navigation, screen readers), and run Lighthouse audits. Before release, I go through a checklist: links, forms, metadata, favicon, OpenGraph tags.",
+  
+    "contact_tag": "Contact Us",
+    "contact_lead": "Connect with me — let’s discuss your next project",
+    "contact_sayhi": "Say Hi",
+    "contact_quote": "Get a Quote",
+    "contact_name": "Name",
+    "contact_email": "Email",
+    "contact_message": "Message",
+    "contact_send": "Send Message",
+  
+    "footer_open": "Open to work",
+    "footer_hire": "Hire me",
+    "footer_made": "Built with HTML, CSS & JS."
+  }
+  
